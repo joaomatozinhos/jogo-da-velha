@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+}
+
+.container {
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template: 100px auto / auto;
+}
+
+#stage {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(7, 7, 139);
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+  padding: 7px;
+  align-self: flex-start;
+}
+
+.square {
+  background-color: rgb(172, 165, 165);
+}
+
+.o,
+.x {
+  text-align: center;
+}
+
+.o:after {
+  content: '\1F6E1';
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.x:after {
+  content: '\2694';
+  font-size: 50px;
+  line-height: 100px;
+}
