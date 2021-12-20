@@ -31,6 +31,8 @@ body {
   background-color: rgb(172, 165, 165);
 }
 
+/* Classes a serem adicionados pelo JS a cada jogada */
+
 .o,
 .x {
   text-align: center;
@@ -38,12 +40,16 @@ body {
 
 .o:after {
   content: '\1F6E1';
+  /* É o código do emoji */
+
   font-size: 50px;
   line-height: 100px;
 }
 
 .x:after {
   content: '\2694';
+  /* É o código do emoji */
+
   font-size: 50px;
   line-height: 100px;
 }
