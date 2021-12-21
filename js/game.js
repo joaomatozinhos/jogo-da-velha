@@ -68,3 +68,15 @@ function isWin() {
   }
   return false
 }
+
+function reset() {
+  let squares = document.querySelectorAll('.square')
+
+  for (square of squares) {
+    square.innerHTML = ''
+  }
+
+  board = ['', '', '', '', '', '', '', '', '']
+  playerTime = 0
+  gameOver = false
+}

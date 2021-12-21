@@ -19,3 +19,7 @@ function updateSquare(position) {
   let symbol = board[position]
   square.innerHTML = `<div class='${symbol}'></div>`
 }
+
+// resetar o jogo
+let btnReset = document.getElementById('btn-reset')
+btnReset.addEventListener('click', reset)
