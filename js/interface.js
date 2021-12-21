@@ -12,3 +12,10 @@ function play() {
   }
   updateSquare(position)
 }
+
+// função para preencher o tabuleiro
+function updateSquare(position) {
+  let square = document.getElementById(position.toString())
+  let symbol = board[position]
+  square.innerHTML = `<div class='${symbol}'></div>`
+}
